@@ -3,7 +3,7 @@
 A wrapper for Go's html/template and GeertJohan's go.rice
 
 ### Examples
-Import the package: `import "go.iondynamics.net/templice"`
+Import the package: `import "go.iondynamics.net/templice"`  
 most of the time you'll also need at least `import "github.com/GeertJohan/go.rice"`
 
 #### Basic Usage
