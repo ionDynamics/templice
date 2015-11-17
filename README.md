@@ -14,7 +14,8 @@ tpl.ExecuteTemplate(os.Stdout, "hello.tpl", "world")
 
 #### Usage with subdirectories
 ```go
-tpl := templice.New(rice.MustFindBox("http-files")).LoadDir("templates")
+tpl := templice.New(rice.MustFindBox("http-files"))
+tpl.LoadDir("templates")
 tpl.ExecuteTemplate(os.Stdout, "templates/hello.tpl", "world")
 ```
 
