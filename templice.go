@@ -89,7 +89,7 @@ func (t *Template) ExecuteTemplate(wr io.Writer, name string, data interface{}) 
 	return t.tpl.ExecuteTemplate(wr, name, data)
 }
 
-//Do executes
+//Do executes the given Func in a mutex-secured environment
 func (t *Template) Do(f Func) *Template {
 	t.mtx.Lock()
 	defer t.mtx.Unlock()
