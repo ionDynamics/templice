@@ -1,8 +1,10 @@
 # templice
 
-A wrapper for Go's html/template and GeertJohan's go.rice
-
+A wrapper for Go's html/template and GeertJohan's go.rice  
+  
 If you have used template.ParseGlob and switched from direct filesystem access to go.rice, you've might run into the problems this library tries to circumvent.
+
+[Documentation](https://go.iondynamics.net/templice)
 
 ### Examples
 Import the package: `import "go.iondynamics.net/templice"`  
