@@ -1,3 +1,7 @@
+/*
+Package templice is a wrapper for Go's html/template and GeertJohan's go.rice
+If you have used template.ParseGlob and switched from direct filesystem access to go.rice, you've might run into the problems this library tries to circumvent.
+*/
 package templice
 
 import (
