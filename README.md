@@ -12,7 +12,7 @@ most of the time you'll also need at least `import "github.com/GeertJohan/go.ric
 
 #### Basic Usage
 ```go
-tpl := templice.New(rice.MustFindBox("template)).Load()
+tpl := templice.New(rice.MustFindBox("template")).Load()
 tpl.ExecuteTemplate(os.Stdout, "hello.tpl", "world")
 ```
 
@@ -25,7 +25,7 @@ tpl.ExecuteTemplate(os.Stdout, "templates/hello.tpl", "world")
 
 #### Prepare a FuncMap before loading/parsing templates
 ```go
-tpl := templice.New(rice.MustFindBox("template))
+tpl := templice.New(rice.MustFindBox("template"))
 funcMap := template.FuncMap{
 	"up": strings.ToUpper,
 }
