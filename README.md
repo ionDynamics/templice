@@ -12,7 +12,8 @@ most of the time you'll also need at least `import "github.com/GeertJohan/go.ric
 
 #### Basic Usage
 ```go
-tpl := templice.New(rice.MustFindBox("template")).Load()
+tpl := templice.New(rice.MustFindBox("template"))
+tpl.Load()
 tpl.ExecuteTemplate(os.Stdout, "hello.tpl", "world")
 ```
 
